@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', require('./controller/controller'));
 
 // Server
-const port = 20000;
+const port = 80;
 app.listen(port, function () {
     console.log('listening on port:' + port);
 });
