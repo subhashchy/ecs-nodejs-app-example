@@ -28,6 +28,6 @@
   "requiresCompatibilities": [
     "EC2"
   ],
-  "networkMode": null,
+  "networkMode": "awsvpc",
   "family": "<APP_NAME>"
 }
