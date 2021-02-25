@@ -6,18 +6,14 @@ Resources:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
           ContainerName: "<APP_NAME>"
-          ContainerPort: <SERVICE_PORT>
-          
+          ContainerPort: <SERVICE_PORT>          
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 300
-
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
-
   ApplicationStart:
     - location: scripts/application_start.sh
-    - location: scripts/create_test_db.sh
       timeout: 300
