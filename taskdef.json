@@ -29,5 +29,8 @@
     "EC2","FARGATE"
   ],
   "networkMode": "awsvpc",
-  "family": "<APP_NAME>"
+  "family": "<APP_NAME>",
+    "cpu": "256", 
+    "memory": "512", 
+
 }
